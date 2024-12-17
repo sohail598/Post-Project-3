@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Player Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="./game.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Two Player Rock, Paper, Scissors</h1>
+        <p>Player 1, choose your move:</p>
+        <div class="buttons">
+            <button class="choice" onclick="playerChoice(1, 'rock')">Rock</button>
+            <button class="choice" onclick="playerChoice(1, 'paper')">Paper</button>
+            <button class="choice" onclick="playerChoice(1, 'scissors')">Scissors</button>
+        </div>
+
+        <p>Player 2, choose your move:</p>
+        <div class="buttons">
+            <button class="choice" onclick="playerChoice(2, 'rock')">Rock</button>
+            <button class="choice" onclick="playerChoice(2, 'paper')">Paper</button>
+            <button class="choice" onclick="playerChoice(2, 'scissors')">Scissors</button>
+        </div>
+
+        <p id="result"></p>
+        <p id="score">Player 1: 0 | Player 2: 0</p>
+        <button onclick="resetGame()">Start a New Round</button>
+    </div>
+
+    <script src="./game.js"></script>
+</body>
+</html>
